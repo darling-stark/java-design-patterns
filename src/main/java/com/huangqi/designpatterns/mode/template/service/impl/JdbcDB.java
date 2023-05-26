@@ -1,4 +1,6 @@
-package com.huangqi.designpatterns.mode.template.domain;
+package com.huangqi.designpatterns.mode.template.service.impl;
+
+import com.huangqi.designpatterns.mode.template.service.AbstractDB;
 
 /**
  * @author huangqi

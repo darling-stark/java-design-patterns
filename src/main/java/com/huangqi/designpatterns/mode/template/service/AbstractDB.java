@@ -1,4 +1,4 @@
-package com.huangqi.designpatterns.mode.template.domain;
+package com.huangqi.designpatterns.mode.template.service;
 
 /**
  * 模板类
@@ -31,7 +31,7 @@ public abstract class AbstractDB {
     /**
      * 钩子方法
      */
-    public void setOperate(String operate){
+    public void setOperate(String operate) {
         this.operate = operate;
     }
 

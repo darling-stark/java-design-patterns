@@ -1,7 +1,7 @@
 package com.huangqi.designpatterns.mode.template;
 
-import com.huangqi.designpatterns.mode.template.domain.JdbcDB;
-import com.huangqi.designpatterns.mode.template.domain.PoolDB;
+import com.huangqi.designpatterns.mode.template.service.impl.JdbcDB;
+import com.huangqi.designpatterns.mode.template.service.impl.PoolDB;
 
 /**
  * @author huangqi
