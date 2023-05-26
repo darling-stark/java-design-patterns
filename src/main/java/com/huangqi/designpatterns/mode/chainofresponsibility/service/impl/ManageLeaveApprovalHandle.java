@@ -5,17 +5,17 @@ import com.huangqi.designpatterns.mode.chainofresponsibility.service.LeaveApprov
 
 /**
  * @author huangqi
- * @date 2023-05-26 9:42
+ * @date 2023-05-26 10:00
  */
-public class DirectorLeaveApprovalHandle extends LeaveApprovalHandle {
-    public DirectorLeaveApprovalHandle(String name) {
+public class ManageLeaveApprovalHandle extends LeaveApprovalHandle {
+    public ManageLeaveApprovalHandle(String name) {
         super.name = name;
     }
 
     @Override
     public void handle(LeaveApproval leaveApproval) {
-        if (leaveApproval.getDays() < 3) {
-            System.out.println(name + "主任审批");
+        if (leaveApproval.getDays() >= 3 && leaveApproval.getDays() < 10) {
+            System.out.println(name + "经理审批");
         } else {
             super.nextHandle.handle(leaveApproval);
         }
